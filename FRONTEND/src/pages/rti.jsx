@@ -39,11 +39,11 @@ export default function RTI() {
 
           {open === "act" && (
             <div className="acc-body">
-              <a href="/public/assets/pdfs/RTIACT2005.pdf" target="_blank">
+              <a href="../../public/assets/pdfs/RTIACT2005.pdf" target="_blank">
                 RTI Act 2005
               </a>
               <br />
-              <a href="../../public/assets/pdfs/RTIACT2005_TELUGU(1).pdf" target="_blank">
+              <a href="../../public/assets/pdfs/RTIACT2005_TELUGU.pdf" target="_blank">
                 సమాచార హక్కు చట్టం 2005
               </a>
             </div>

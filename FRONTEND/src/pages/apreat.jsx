@@ -38,7 +38,7 @@ export default function Apreat() {
                 <td>
                   <img
                     className="apreat-photo"
-                    src="/public/images/JUSTICEMGangarao.jpg"
+                    src="../../public/assets/images/JUSTICEMGangarao.jpg"
                     alt="Chairperson"
                   />
                 </td>
@@ -73,7 +73,7 @@ export default function Apreat() {
                 <td>
                   <img
                     className="apreat-photo"
-                    src="/public/images/Ramachandrareddy sir.jpeg"
+                    src="../../public/assets/images/Ramachandrareddy sir.jpeg"
                     alt="Ramachandra Reddy Sir"
                   />
                 </td>

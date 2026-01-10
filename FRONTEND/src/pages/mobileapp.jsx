@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/mobileapp.css";
-import WorkInProgress from "../assets/images/work-in-progress.jpg"
+import WorkInProgress from "../../public/assets/images/work-in-progress.jpg"
 
 const MobileApp = () => {
   return (
