@@ -1,12 +1,17 @@
 import os
 from dotenv import load_dotenv
 
-load_dotenv()  # Load .env once
+# ========================
+# Load environment
+# ========================
+load_dotenv()
+
 
 def str_to_bool(value, default=False):
     if value is None:
         return default
     return value.lower() in ("true", "1", "yes")
+
 
 class Config:
     # ========================
@@ -17,14 +22,6 @@ class Config:
     PORT = int(os.getenv("PORT", 8080))
 
     # ========================
-    # CORS
-    # ========================
-    ALLOWED_ORIGINS = os.getenv(
-        "ALLOWED_ORIGINS",
-        "http://localhost:5173"
-    )
-
-    # ========================
     # Database
     # ========================
     SQLALCHEMY_DATABASE_URI = os.getenv("DATABASE_URL")
@@ -32,6 +29,15 @@ class Config:
 
     if not SQLALCHEMY_DATABASE_URI:
         raise RuntimeError("DATABASE_URL is not set in .env")
+
+    # ========================
+    # CORS (Handled globally)
+    # ========================
+    CORS_ORIGINS = [
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://15gn8208-5173.inc1.devtunnels.ms/"
+    ]
 
     # ========================
     # Email

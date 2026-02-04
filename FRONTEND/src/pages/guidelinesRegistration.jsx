@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/guidelinesRegistration.css";
 import { FaDownload, FaFileAlt, FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";

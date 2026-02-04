@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/evolutionofrera.css";
-import evalution from"../../public/assets/images/evalution.jpg";
+
+// ✅ Use public image as URL (DO NOT import)
+const evalution = "/assets/images/evalution.jpg";
 
 const timelineData = [
   {
@@ -46,7 +48,7 @@ const timelineData = [
     text: "Rules amended to simplify procedures and strengthen transparency."
   },
   {
-    year: "2020",  
+    year: "2020",
     side: "right",
     color: "green",
     text: "Focus on dispute resolution, grading of promoters and agents."
@@ -87,7 +89,7 @@ const EvolutionOfRera = () => {
         </div>
 
         <div className="evofrera-intro-right">
-          <img src={evalution} alt="Evalutionimg" />
+          <img src={evalution} alt="Evolution of RERA" />
         </div>
       </div>
 

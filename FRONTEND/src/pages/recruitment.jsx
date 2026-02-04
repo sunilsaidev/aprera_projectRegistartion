@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/recruitment.css";
  import { FaDownload } from "react-icons/fa";
 import { Link } from "react-router-dom";

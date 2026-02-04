@@ -68,24 +68,25 @@ table {
   border-collapse: collapse;
 }
 
-thead th {
+.auth-notif-wrapper thead th {
   background: #3f5568;
   color: #fff;
   padding: 10px;
   border: 1px solid #ddd;
 }
 
-tbody td {
+.auth-notif-wrapper tbody td {
   padding: 10px;
   border: 1px solid #ddd;
   vertical-align: top;
+  
 }
-tbody td:nth-child(3) {
+.auth-notif-wrapper tbody td:nth-child(3) {
   white-space: nowrap;
   text-align: center;
 }
 
-tbody tr:nth-child(even) {
+.auth-notif-wrappertbody tr:nth-child(even) {
   background: #f9f9f9;
 }
 

@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/Accessibility.css";
-import accessibilityImg from "../../public/assets/images/Accessibility.jpg";
+
+// ✅ Use public asset as URL (DO NOT import from /public)
+const accessibilityImg = "/assets/images/Accessibility.jpg";
 
 const Accessibility = () => {
   return (

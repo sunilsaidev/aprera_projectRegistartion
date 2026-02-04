@@ -1,8 +1,9 @@
 import React from "react";
 import "../styles/AdvertisementGuidelines.css";
-import guidelineImage from "../../public/assets/images/Annexure.jpg";
-import Annexure from "../../public/assets/pdfs/Annexure.pdf";
 
+// ✅ Use public assets as URLs (DO NOT import from /public)
+const guidelineImage = "/assets/images/Annexure.jpg";
+const Annexure = "/assets/pdfs/Annexure.pdf";
 
 const AdvertisementGuidelines = () => {
   return (
@@ -64,12 +65,9 @@ const AdvertisementGuidelines = () => {
           GUIDELINES FOR DISPLAY OF “RERA REGISTERED” STAMP
         </h4>
 
-        {/* Red Border Image Box */}
+        {/* Image */}
         <div className="image-box">
-          <img
-            src={guidelineImage}
-            alt="RERA Registered Stamp Guidelines"
-          />
+          <img src={guidelineImage} alt="RERA Registered Stamp Guidelines" />
         </div>
 
         {/* Downloads */}
@@ -88,15 +86,25 @@ const AdvertisementGuidelines = () => {
               <td>1</td>
               <td>AP RERA Authorized Stamp</td>
               <td>
-                <a className="download-btn" href="/downloads/AP_RERA_authorised_stamp(1).zip" download >⬇️</a>
-                {/* <button className="download-btn" >⬇️</button> */}
+                <a
+                  className="download-btn"
+                  href="/downloads/AP_RERA_authorised_stamp(1).zip"
+                  download
+                >
+                  ⬇️
+                </a>
               </td>
             </tr>
             <tr>
               <td>2</td>
               <td>Where to show RERA registered stamp</td>
               <td>
-                <button className="download-btn" onClick={() => window.open(Annexure, "_blank")}>⬇️</button>
+                <button
+                  className="download-btn"
+                  onClick={() => window.open(Annexure, "_blank")}
+                >
+                  ⬇️
+                </button>
               </td>
             </tr>
           </tbody>

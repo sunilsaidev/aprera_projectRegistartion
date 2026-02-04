@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/PrivacyPolicy.css";
-import privaccy from "../../public/assets/images/privaccy.jpg";
 
 const PrivacyPolicy = () => {
   return (
@@ -41,7 +40,10 @@ const PrivacyPolicy = () => {
 
           {/* Image Section */}
           <div className="privacypolicy-image privacypolicy-fade-in-right">
-            <img src={privaccy} alt="Privacy Policy" />
+            <img
+              src="/assets/images/privaccy.jpg"
+              alt="Privacy Policy"
+            />
           </div>
         </div>
       </div>

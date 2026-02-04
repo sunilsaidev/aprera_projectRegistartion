@@ -1,12 +1,16 @@
+import React from "react";
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/navbar";
 import Footer from "../components/Footer";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <>
       <Navbar />
-      <main style={{ minHeight: "70vh" }}>{children}</main>
-      <Footer/>
+      <main style={{ minHeight: "70vh" }}>
+        <Outlet />   {/* 🔥 THIS IS THE KEY FIX */}
+      </main>
+      <Footer />
     </>
   );
 };

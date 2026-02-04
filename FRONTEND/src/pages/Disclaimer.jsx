@@ -1,11 +1,12 @@
 import React from "react";
 import "../styles/Disclaimer.css";
-import disclaimerImg from "../../public/assets/images/Disclaimer.jpg";
+
+// ✅ Use public image as URL (DO NOT import it)
+const disclaimerImg = "/assets/images/Disclaimer.jpg";
 
 const Disclaimer = () => {
   return (
     <div className="disclaimer-page">
-
       {/* Full width breadcrumb */}
       <div className="disclaimer-breadcrumb">
         <span>You are here :</span>

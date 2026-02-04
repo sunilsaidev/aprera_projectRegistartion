@@ -1,7 +1,5 @@
 import React from "react";
 import "../styles/PressRelease.css";
-import PressNotepdf from "../../public/assets/pdfs/PressNote.pdf";
-import LastDatepdf from "../../public/assets/pdfs/LastDate_News.pdf";
 
 const PressRelease = () => {
   return (
@@ -10,8 +8,8 @@ const PressRelease = () => {
         {/* Breadcrumb */}
         <div className="pressRel-breadcrumb">
           You are here :&nbsp;
-          <a href="#">Home</a> /&nbsp;
-          <a href="#">Promotions</a> /&nbsp;
+          <a href="/">Home</a> /&nbsp;
+          <a href="/promotions">Promotions</a> /&nbsp;
           <span>Press Releases</span>
         </div>
 
@@ -30,10 +28,19 @@ const PressRelease = () => {
 
             <tbody>
               <tr>
-                <td className="pressRel-subject-text">Press note on Web launch</td>
+                <td className="pressRel-subject-text">
+                  Press note on Web launch
+                </td>
                 <td className="pressRel-date-text">05th Feb 2018</td>
                 <td>
-                  <span className="pressRel-download-link" onClick={() => window.open(PressNotepdf, "_blank")}>⬇️</span>
+                  <span
+                    className="pressRel-download-link"
+                    onClick={() =>
+                      window.open("/assets/pdfs/PressNote.pdf", "_blank")
+                    }
+                  >
+                    ⬇️
+                  </span>
                 </td>
               </tr>
 
@@ -43,7 +50,14 @@ const PressRelease = () => {
                 </td>
                 <td className="pressRel-date-text">27th Aug 2019</td>
                 <td>
-                  <span className="pressRel-download-link" onClick={() => window.open(LastDatepdf, "_blank")}>⬇️</span>
+                  <span
+                    className="pressRel-download-link"
+                    onClick={() =>
+                      window.open("/assets/pdfs/LastDate_News.pdf", "_blank")
+                    }
+                  >
+                    ⬇️
+                  </span>
                 </td>
               </tr>
             </tbody>

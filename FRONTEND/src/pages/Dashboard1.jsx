@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/dashboard.css";
 import AnalysisChart from "./AnalysisCharts";
 // import AnalysisChart from "./AnalysisCharts";

@@ -1,0 +1,4 @@
+from .associate_controller import associate_bp
+from app.controllers.application_associate_controller import application_associate_bp
+
+

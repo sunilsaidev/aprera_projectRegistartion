@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../styles/projectRegistration.css";
-import testingPdf from "../../public/assets/pdfs/testing.pdf";
 import { useNavigate } from "react-router-dom";
 
 export default function ProjectRegistration() {
@@ -74,14 +73,14 @@ export default function ProjectRegistration() {
           </li>
 
           <li>
-          <strong className="proregi-address-red">List of Address Proof:</strong>
- Aadhaar/Ration Card/Bank Book/Driving License/Voter Id/Gas/Phone Bill/Passport (Any one)
+            <strong className="proregi-address-red">List of Address Proof:</strong>
+            Aadhaar/Ration Card/Bank Book/Driving License/Voter Id/Gas/Phone Bill/Passport (Any one)
           </li>
 
           <li>
             <span
               className="proregi-link"
-              onClick={() => window.open(testingPdf, "_blank")}
+              onClick={() => window.open("/assets/pdfs/testing.pdf", "_blank")}
             >
               Click Here
             </span>{" "}
@@ -96,11 +95,10 @@ export default function ProjectRegistration() {
           </li>
         </ol>
 
-<div className="proregi-application-type">
-  <div className="proregi-section-label">
-    Application Type<span className="proregi-required">*</span>
-  </div>
-
+        <div className="proregi-application-type">
+          <div className="proregi-section-label">
+            Application Type<span className="proregi-required">*</span>
+          </div>
 
           <label>
             <input

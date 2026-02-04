@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/HyperlinkingPolicy.css";
-import hyperlinkImg from "../../public/assets/images/hyperlink.jpg";
 
 const HyperlinkingPolicy = () => {
   return (
@@ -37,7 +36,10 @@ const HyperlinkingPolicy = () => {
 
           {/* Image */}
           <div className="hyperlink-image hyperlink-slide-right">
-            <img src={hyperlinkImg} alt="Hyperlinking Policy" />
+            <img
+              src="/assets/images/hyperlink.jpg"
+              alt="Hyperlinking Policy"
+            />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
-import tw from "../../public/assets/images/tw.png";
-import fb from "../../public/assets/images/fb.png";
-import youtube from "../../public/assets/images/youtube.png";
+const tw = "/assets/images/tw.png";
+const fb = "/assets/images/fb.png";
+const youtube = "/assets/images/youtube.png";
 import {
   Box,
   Container,

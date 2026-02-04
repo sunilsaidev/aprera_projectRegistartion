@@ -1,27 +1,17 @@
-from flask import Blueprint, request, jsonify
-from app.models.test_connection import TestConnectionModel
+from flask import Blueprint, jsonify
+from app.models.database import db
+from sqlalchemy import text
 
 test_connection_bp = Blueprint("test_connection_bp", __name__)
 
-@test_connection_bp.route("/test", methods=["POST"])
-def create_test():
-    data = request.json
-    row = TestConnectionModel.insert(data.get("name"))
-
-    return jsonify({
-        "id": row.id,
-        "name": row.name
-    }), 201
-
-
 @test_connection_bp.route("/test", methods=["GET"])
 def get_tests():
-    rows = TestConnectionModel.fetch_all()
-
-    return jsonify([
-        {
-            "id": r.id,
-            "name": r.name,
-            "created_at": str(r.created_at)
-        } for r in rows
-    ])
+    try:
+        result = db.session.execute(text("SELECT 1")).fetchone()
+        return jsonify({
+            "status": "success",
+            "message": "PostgreSQL connection is working",
+            "result": result[0]
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500

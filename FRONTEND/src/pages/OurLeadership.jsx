@@ -1,3 +1,4 @@
+import React from "react";
 import "../styles/OurLeadership.css";
 
 export default function OurLeadership() {

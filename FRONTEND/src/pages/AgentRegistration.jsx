@@ -140,7 +140,7 @@
 // };
 
 // export default AgentRegistration;
-
+import React from "react";
 import "../styles/AgentRegistration.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";

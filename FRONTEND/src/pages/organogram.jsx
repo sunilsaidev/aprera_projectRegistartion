@@ -1,13 +1,13 @@
+import React from "react";
 import "../styles/organogram.css";
-import Organigram from "../../public/assets/images/Organisation_Structure.jpeg";
 
 export default function Organogram() {
   return (
     <div className="org-page">
-
       {/* Breadcrumb */}
       <div className="org-breadcrumb">
-        You are here : <span>Home</span> / <span>About Us</span> / <span>Organogram</span>
+        You are here : <span>Home</span> / <span>About Us</span> /{" "}
+        <span>Organogram</span>
       </div>
 
       {/* Title */}
@@ -17,11 +17,10 @@ export default function Organogram() {
       {/* Screenshot Image */}
       <div className="org-image-wrapper">
         <img
-          src={Organigram}
+          src="/assets/images/Organisation_Structure.jpeg"
           alt="APRERA Organization Structure"
         />
       </div>
-
     </div>
   );
 }
